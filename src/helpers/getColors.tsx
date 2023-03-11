@@ -13,12 +13,12 @@ export const getImageColors = async (uri : string) => {
         primary = colors.dominant
         secondary = colors.average
         const averageColor = colors.average
-      } else {
+      }/* else {
         // Access iOS properties
         primary = colors.primary
         secondary = colors.secondary
         const backgroundColor = colors.background
-      }
+      }*/
 
       return [primary, secondary]
 }
